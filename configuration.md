@@ -26,7 +26,7 @@ npx react-native-rename "Your App Name"
 ### Adding signing config to your app's Gradle config#
 
     ...
-  android {
+    android {
     ...
     defaultConfig { ... }
     signingConfigs {
@@ -45,13 +45,13 @@ npx react-native-rename "Your App Name"
             signingConfig signingConfigs.release
         }
     }
-}
+    }
      ...
 
 ### Generating the release APK
 
-$ cd android
-$ ./gradlew bundleRelease
+    $ cd android
+    $ ./gradlew bundleRelease
 
 ### Testing the release build of your app
-$ npx react-native run-android --variant=release
+    $ npx react-native run-android --variant=release
