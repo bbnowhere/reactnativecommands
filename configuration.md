@@ -18,15 +18,15 @@ npx react-native-rename "Your App Name"
     Place the my-upload-key.keystore file under the android/app directory in your project folder.
     Edit the file ~/.gradle/gradle.properties or android/gradle.properties, and add the following (replace ***** with the correct keystore password, alias and key     password),
     
-MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
-MYAPP_UPLOAD_KEY_ALIAS=my-key-alias
-MYAPP_UPLOAD_STORE_PASSWORD=*****
-MYAPP_UPLOAD_KEY_PASSWORD=*****
+    MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore
+    MYAPP_UPLOAD_KEY_ALIAS=my-key-alias
+    MYAPP_UPLOAD_STORE_PASSWORD=*****
+    MYAPP_UPLOAD_KEY_PASSWORD=*****
 
 ### Adding signing config to your app's Gradle config#
 
-...
-android {
+    ...
+  android {
     ...
     defaultConfig { ... }
     signingConfigs {
@@ -46,7 +46,7 @@ android {
         }
     }
 }
-...
+     ...
 
 ### Generating the release APK
 
