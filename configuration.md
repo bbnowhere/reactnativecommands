@@ -55,3 +55,15 @@ npx react-native-rename "Your App Name"
 
 ### Testing the release build of your app
     $ npx react-native run-android --variant=release
+
+### Publishing to other stores
+  You can create an APK for each CPU by changing the following line in android/app/build.gradle:
+     - ndk {
+     -   abiFilters "armeabi-v7a", "x86"
+     - }
+     - def enableSeparateBuildPerCPUArchitecture = false
+     + def enableSeparateBuildPerCPUArchitecture = true
+     
+     - universalApk false  // If true, also generate a universal APK
+     + universalApk true  // If true, also generate a universal APK
+    
