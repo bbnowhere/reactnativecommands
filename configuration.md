@@ -67,7 +67,7 @@ npx react-native-rename "Your App Name"
      
      - universalApk false  // If true, also generate a universal APK
      + universalApk true  // If true, also generate a universal APK
-### To check your key details whether we are not using wromg key
+### To check your key details whether we are not using wrong key
 
     keytool -list -v -keystore "myKeyStore.jks" -storepass myPassword
     ## with apk
